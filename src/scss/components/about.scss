@@ -1,0 +1,44 @@
+.about {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 160px;
+  }
+
+  &__info {
+    max-width: 481px;
+  }
+
+  &__suptitle {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    margin-bottom: 62px;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #666666;
+    &-span {
+      color: var(--black);
+    }
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    &-outer {
+      width: 447px;
+      height: 397px;
+    }
+  }
+}

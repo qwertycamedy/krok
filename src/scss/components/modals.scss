@@ -1,0 +1,112 @@
+.cons {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  display: none;
+  animation: show 1s;
+  align-items: center;
+  justify-content: center;
+
+  &.active {
+    display: flex;
+  }
+
+  &__inner {
+    width: 538px;
+    height: 564px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(117.59deg, #1351A4 14.89%, #0A1148 89.51%);
+    border-radius: 19px;
+  }
+
+  &__title {
+    max-width: 435px;
+    margin: 0 auto 32px;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 98.11%;
+    text-align: center;
+    color: #FFFFFF;
+
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 395px;
+
+    &-outer {
+      position: relative;
+      padding: 59px 0 61px 85px;
+      z-index: 1;
+      height: max-content;
+
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 859px;
+        height: 100%;
+        background: linear-gradient(117.59deg, #1351A4 14.89%, #0A1148 89.51%);
+        border-radius: 19px;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 700;
+  }
+
+  &__input {
+    padding: 17px 22px 14px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+    border: 2px solid #FFFFFF;
+    background: unset;
+    border-radius: 6px;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &__btn {
+    margin: 20px auto 0;
+    width: 199px;
+    height: 49px;
+    background: linear-gradient(270deg, #EA2D55 0%, #B62544 100%);
+    border-radius: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 14px;
+    border: unset;
+    color: #fff;
+    transition: .1s linear;
+
+    &:hover {
+      transform: translateY(3px);
+    }
+  }
+}
+

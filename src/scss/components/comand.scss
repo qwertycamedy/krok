@@ -1,0 +1,140 @@
+.comand {
+  background-image: url(../img/comand_bg.svg);
+  background-size: cover;
+  transform: translateY(-70px);
+  &__inner {
+    padding-top: 290px;
+  }
+
+  &__suptitle {
+    margin-bottom: 7px;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  &__slider {
+    overflow: hidden;
+    margin-bottom: 112px;
+
+    &-outer {
+      position: relative;
+    }
+
+    &-arrow {
+      &:after {
+        display: none;
+      }
+
+      width: 32px;
+      height: 42px;
+
+      &-prev {
+        right: unset;
+        left: -140px;
+      }
+      
+      &-next {
+        left: unset;
+        right: -140px;
+      }
+    }
+
+    &-card {
+      background: #fff;
+      box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.04);
+      border-radius: 13px;
+      overflow: hidden;
+
+      &-post {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px 30px;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 10px;
+        text-align: right;
+        color: #FFFFFF;
+        border-radius: 0px 5px 0px 17px;
+        background: linear-gradient(162.21deg, #EA2D55 -2.77%, #B62544 138.27%);
+      }
+
+      &-info {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+
+        &-suptitle {
+          font-size: 11px;
+          line-height: 12px;
+        }
+
+        &-title {
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+
+  &__num {
+    &-card {
+      &-outer {
+        display: flex;
+        gap: 30px;
+      }
+      border-radius: 13px;
+      width: 225px;
+      height: 218px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #FFFFFF;
+
+      &:nth-child(1) {
+        background: #21B2F2;
+      }
+      &:nth-child(2) {
+        background: #8544F0;
+      }
+      &:nth-child(3) {
+        background: #C52A87;
+      }
+      &:nth-child(4) {
+        background: #403DD0;
+      }
+    }
+
+    font-family: var(--ms);
+    font-size: 84px;
+    line-height: 102px;
+    font-weight: 700;
+    margin-bottom: 22px;
+
+    &-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 9px;
+    }
+
+    &-subtitle {
+      font-size: 9px;
+      line-height: 10px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

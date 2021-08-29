@@ -29,6 +29,7 @@
     color: #666666;
     &-span {
       color: var(--black);
+      font-weight: 700;
     }
     &:nth-child(2) {
       margin-bottom: 0;
@@ -36,9 +37,14 @@
   }
 
   &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     &-outer {
       width: 447px;
       height: 397px;
+      overflow: hidden;
+      border-radius: 10px;
     }
   }
 }
